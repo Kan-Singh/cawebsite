@@ -1,3 +1,8 @@
+
 export default function Blog() {
-    return <p>This is the blog!</p>;
-  }
+  return (
+    <div>
+      <p>This is the blog!</p>
+    </div>
+  );
+}
