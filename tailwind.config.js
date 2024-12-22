@@ -13,9 +13,12 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       primary: colors.emerald,
-      secondary: colors.blue,
+      secondary: colors.stone,
+      
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
