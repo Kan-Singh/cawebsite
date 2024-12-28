@@ -54,11 +54,52 @@ import Container from '../components/Container';
       "your_tags": ["Film", "horror"]
     };
   
+    const item3 ={
+      "title": "Interview With The Vampire",
+      "rating": "5/5",
+      "pic": "https://pbs.twimg.com/media/GQP2rlRWEAAHKup.jpg",
+      "your_tags": ["Television", "drama", "gothic", "romance", "period"]
+    };
+
+    const item4 ={
+      "title": "Another Country",
+      "rating": "2/5",
+      "pic": "https://m.media-amazon.com/images/I/81ea9QuhL5L.jpg",
+      "your_tags": ["Novel", "drama", "race", "queer", "classics"]
+    };
+
+    const item5 ={
+      "title": "Piglet",
+      "rating": "3/5",
+      "pic": "https://m.media-amazon.com/images/I/81YVR59pFUL.jpg",
+      "your_tags": ["Novel", "contemporary", "food", "class", "feminism", "character-driven"]
+    };
+
+    const item6 ={
+      "title": "Daisies",
+      "rating": "3/5",
+      "pic": "https://i.pinimg.com/736x/e4/42/8c/e4428cb9f994ce51b09456af9a219b96.jpg",
+      "your_tags": ["Film", "Czech", "surrealism", "experimental","satire" ]
+    };
+
+    const item7 ={
+      "title": "Loves of a Blonde",
+      "rating": "2/5",
+      "pic": "https://i.ytimg.com/vi/2wN7COyj0k4/sddefault.jpg",
+      "your_tags": ["Film", "Czech", "romance", "Tragicomedy","Coming of Age", "Drama" ]
+    };
+
+
     return (
       <Container>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Archive item={item} />
           <Archive item={item2} />
+          <Archive item={item3} />
+          <Archive item={item4} />
+          <Archive item={item5} />
+          <Archive item={item6} />
+          <Archive item={item7} />
         </ul>
       </Container>
     );

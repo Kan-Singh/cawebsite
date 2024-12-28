@@ -1,5 +1,5 @@
-import DatePill from "../../components/DatePill";
-
+//import DatePill from "../../components/DatePill";
+import DatePill from "@/app/components/DatePill";
 export default function BlogPostHeader({ post }) {
   return (
     <header className="text-center space-y-4">

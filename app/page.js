@@ -62,13 +62,13 @@ export default function Home() {
   };
 
   const work2 = {
-    tile: "Interview with The Vampire",
-    author: "Rolin Jones",
-    type: "Television",
-    genres: ["gothic", "horror", "drama", "romance"],
-    publishYear: "2022",
-    startDate: "9/15/2024",
-    currentPosition: "4/8",
+    tile: "Amadeus",
+    author: "Milos Forman",
+    type: "Film",
+    genres: ["historical", "comedy", "drama", "music", "period", "biographical"],
+    publishYear: "1984",
+    startDate: "11/30/2024",
+    currentPosition: "1h 4m/2h 40m",
   };
 
   const work3 = {
@@ -79,14 +79,14 @@ export default function Home() {
     publishYear: "2018",
     startDate: "Not Yet Started",
   };
-  
 
+  
   return (
-    <Container  >
-      {/* Create a flex container to position the GIF on the side */}
-      <div className=" flex items-start justify-between gap-8">
+    <Container>
+      {/* Create a flex container to position the main content and the side section */}
+      <div className="flex items-start justify-between gap-8">
         {/* Main Content Section */}
-        <div className= " flex-1">
+        <div className="flex-1">
           <h4 className="font-medium">Current:</h4>
           <br />
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -102,21 +102,36 @@ export default function Home() {
             <Work work={work3} />
           </ul>
         </div>
-
-        {/* Side GIF */}
-        <div className="w-full max-w-xs">
-          <br />
-          <br />
-          <br />
-          <br />
-          <img
-            src="https://i.pinimg.com/originals/d2/b8/ad/d2b8ad9758287638f109e8f75493bc3f.gif"  // Replace with your GIF URL
-            alt="Exciting Animation"
-            className="w-full h-auto rounded-md"
-          />
+  
+        {/* Right Section (GIF and Playlist stacked vertically) */}
+        <div className="w-full max-w-sm flex flex-col gap-4"> {/* Right-side container */}
+          {/* GIF */}
+          <div>
+            <img
+              src="https://i.pinimg.com/originals/d2/b8/ad/d2b8ad9758287638f109e8f75493bc3f.gif" // Replace with your GIF URL
+              alt="Exciting Animation"
+              className="w-full h-auto rounded-md"
+            />
+          </div>
+  
+          {/* Spotify Playlist */}
+          <div>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/5BnH2nGGslkuc8rm8QzDG1?utm_source=generator" // Replace with your playlist ID
+              width="100%"
+              height="380"
+              frameBorder="0"
+              allow="encrypted-media"
+              title="Spotify Playlist"
+              className="rounded-md"
+            ></iframe>
+          </div>
         </div>
-        
       </div>
     </Container>
   );
-}
+}  
+ 
+  
+
+  
